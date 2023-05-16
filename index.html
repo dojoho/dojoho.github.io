@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+ <title>USV - Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body {
+  background-color: grey;
+  color: white;
+
+}
+</style>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="index.html"class="w3-button w3-bar-item"> <img src="images\USV_logo.png" alt="USV" style="height:20px"> </a>
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="about.html" class="w3-button w3-bar-item">About USV</a>
+  <a href="upcoming.html" class="w3-button w3-bar-item">Upcoming Concerts</a>
+  <a href="past.html" class="w3-button w3-bar-item">Past Performances</a>
+</nav>
+<!-- Slide Show -->
+
+<section>
+  <img class="mySlides" src="images/choir_1.jpg" style="height:300px">
+</section>
+
+
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+
+  <h2 class="w3-wide">USV - University of Southampton Voices</h2>
+    <p class="w3-opacity"><i>Choir</i></p>
+    <img src="images\USV_logo.png" alt="USV" style="width:50%">
+
+</section>
+<section class="w3-container w3-content w3-center" style="max-width:800px">
+
+
+    <p  class="w3-justify">A non-audition choir based at the University of Southampton. We perform music from a wide range of traditions. Our last concert included material from Elgar to Jazz. </p>
+    <p  class="w3-justify">Rehearsal times 1.10 - 1.50pm University Term Times</p>
+    <p  class="w3-justify">Lead by <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwij5f-Fvff-AhXYQkEAHakpBF0QFnoECB4QAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHarvey_Brough&usg=AOvVaw1Dyv7I3Oho9tRnBtYaZc-c"> Harvey Brough</a></p>
+
+
+
+
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+<p class="w3-justify">
+With help from <a href="https://www.w3schools.com/howto/howto_website.asp"> w3schools.com</a> and  <a href="https://stackoverflow.com">stack overflow</a> </p>
+</section>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="https://github.com/doctorjo/"><i class="fa fa-github"></i></a>
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>  // Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+	}
+	</script>
+</body>
+</html>
